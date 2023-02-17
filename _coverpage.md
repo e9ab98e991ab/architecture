@@ -19,6 +19,5 @@
 
 <embed type="image/png" src="https://source.unsplash.com/random/900x500?" width="258" >
 
-
 [GitHub](https://github.com/e9ab98e991ab/architecture/)
 [阅读](README.md)
