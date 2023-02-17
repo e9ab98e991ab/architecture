@@ -8,7 +8,6 @@
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
     <!--主题-->
 </head>
 <body>
@@ -22,7 +21,7 @@
         repo: 'e9ab98e991ab/architecture',
         formatUpdated: '{MM}/{DD} {HH}:{mm}',
         maxLevel: 4,
-        subMaxLevel: 2,
+        subMaxLevel: 3,
         auto2top: true,
         coverpage: true,
         count:{
@@ -48,30 +47,34 @@
                 '/': '复制成功'
             }
         },
+        latex: {
+            inlineMath   : [['$', '$'], ['\\(', '\\)']], // default
+            displayMath  : [['$$', '$$']],               // default
+        },
         progress: {
             position: "top",
             color: "var(--theme-color,#42b983)",
             height: "5px",
         },
-        plugins: [
-            function (hook, vm) {
-                // load livere
-                hook.beforeEach(function(content) {
-                    var comment = "\n<div id='lv-container' data-id='city' data-uid='"+live+"'></div>\n"
-                    return content + comment;
-                });
-                hook.doneEach(function() {
-                    (function(d, s) {
-                        var j, e = d.getElementsByTagName(s)[0];
-                        if (typeof LivereTower === 'function') { return; }
-                        j = d.createElement(s);
-                        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                        j.async = true;
-                        e.parentNode.insertBefore(j, e);
-                    })(document, 'script');
-                });
-            },
-        ]
+        // plugins: [
+        //     function (hook, vm) {
+        //         // load livere
+        //         hook.beforeEach(function(content) {
+        //             var comment = "\n<div id='lv-container' data-id='city' data-uid='"+live+"'></div>\n"
+        //             return content + comment;
+        //         });
+        //         hook.doneEach(function() {
+        //             (function(d, s) {
+        //                 var j, e = d.getElementsByTagName(s)[0];
+        //                 if (typeof LivereTower === 'function') { return; }
+        //                 j = d.createElement(s);
+        //                 j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        //                 j.async = true;
+        //                 e.parentNode.insertBefore(j, e);
+        //             })(document, 'script');
+        //         });
+        //     },
+        // ]
 
     }
 </script>
@@ -82,10 +85,7 @@
 <script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
-
-<script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/marked@4"></script>
-<!-- CDN files for docsify-katex -->
-<script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
 </body>
 </html>
