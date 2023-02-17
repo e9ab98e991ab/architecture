@@ -73,11 +73,11 @@ android:color="@color/colorAccent">
 
 ## 水波纹效果与布局绘制之间的问题
 
-![img](../../../_media/1354448-37ff47faeefa1837.png)
+![img](https://cdn.jsdelivr.net/gh/e9ab98e991ab/architecture@assets/assets/1354448-37ff47faeefa1837.png)
 
  在使用了以上的**自定义有界水波纹点击效果**后，使用[开发者选项 - 调试GPU过渡绘制]得到下面的视图
 
-![img](../../../_media/1354448-d64a1d0d128a14f4.png)
+![img](https://cdn.jsdelivr.net/gh/e9ab98e991ab/architecture@assets/assets/1354448-d64a1d0d128a14f4.png)
 
 自定义有界水波纹
 
@@ -109,13 +109,13 @@ android:background="?android:attr/selectableItemBackground"
 
 最后可以得到我们想要的效果：
 
-![img](../../../_media/1354448-9200fb6b1432db62.png)
+![img](https://cdn.jsdelivr.net/gh/e9ab98e991ab/architecture@assets/assets/1354448-9200fb6b1432db62.png)
 
 
 
 ## 长按水波纹扩散效果
 
-![img](../../../_media/1354448-8f11f2c691d43da9.gif)
+![img](https://cdn.jsdelivr.net/gh/e9ab98e991ab/architecture@assets/assets/1354448-8f11f2c691d43da9.gif)
 
 长按水波纹扩展效果
 
@@ -147,7 +147,7 @@ android:foreground="?attr/selectableItemBackgroundBorderless"
 
 ## Button点击的水波纹效果
 
-![img](../../../_media/1354448-5d195c450d541d19.gif)
+![img](https://cdn.jsdelivr.net/gh/e9ab98e991ab/architecture@assets/assets/1354448-5d195c450d541d19.gif)
 
 button阴影与点击效果
 
